@@ -1,35 +1,41 @@
-@media (max-width: 422.98px){
-	.icon{
+@media (max-width: 422.98px) {
+	.icon {
 		opacity: 0;
 	}
 }
-body{
+
+body {
 	margin: 0;
 	padding: 0;
 	background: #0b1522;
 	font-family: cursive;
 	font-weight: 900;
+	overflow: hidden;
 }
-.wrapepr{
+
+.wrapepr {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	min-height: 100vh;
 }
-.text{
+
+.text {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 0px 20px 100px;
 	flex-wrap: wrap;
 }
-h1{
+
+h1 {
 	text-align: center;
 	color: #db5e81;
 	text-shadow: 5px 5px 35px #db5e81;
 }
-.icon{
+
+.icon {
 	margin-left: 20px;
 	width: 20px;
 	height: 20px;
@@ -37,16 +43,18 @@ h1{
 	position: relative;
 	transform: rotate(-45deg);
 }
-.icon::before{
+
+.icon::before {
 	content: '';
 	border-radius: 70px;
 	width: 20px;
 	height: 20px;
-	background:  #f5a6bd;
+	background: #f5a6bd;
 	position: absolute;
 	top: -50%;
 }
-.icon::after{
+
+.icon::after {
 	content: '';
 	border-radius: 70px;
 	width: 20px;
@@ -55,7 +63,8 @@ h1{
 	position: absolute;
 	right: -50%;
 }
-.heart{
+
+.heart {
 	width: 150px;
 	height: 150px;
 	background: #f20044;
@@ -64,18 +73,22 @@ h1{
 	box-shadow: -10px 10px 90px #f20044;
 	animation: heart 0.6s linear infinite;
 }
-@keyframes heart{
-	0%{
+
+@keyframes heart {
+	0% {
 		transform: rotate(-45deg) scale(1.07);
 	}
-	80%{
+
+	80% {
 		transform: rotate(-45deg) scale(1.0);
 	}
-	100%{
+
+	100% {
 		transform: rotate(-45deg) scale(0.8);
 	}
 }
-.heart::before{
+
+.heart::before {
 	content: '';
 	border-radius: 70px;
 	width: 150px;
@@ -85,7 +98,8 @@ h1{
 	top: -50%;
 	box-shadow: -10px -10px 90px #f20044;
 }
-.heart::after{
+
+.heart::after {
 	content: '';
 	border-radius: 70px;
 	width: 150px;
