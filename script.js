@@ -1,4 +1,4 @@
-document.addEventListener('touchstart', function (e) {
+document.addEventListener('click', function (e) {
 	var body = document.querySelector('body');
 	var heart = document.createElement('span');
 
@@ -14,9 +14,9 @@ document.addEventListener('touchstart', function (e) {
 	heart.style.height = 50 + size + 'px';
 	body.appendChild(heart);
 
-	console.log(e);
-
 	setTimeout(function () {
 		heart.remove();
 	}, 700);
+
+	console.log(e);
 });
